@@ -9,6 +9,7 @@ defmodule RandompplApiWeb.Router do
     pipe_through :api
     resources "/humans", HumanController, except: [:new, :edit]
     get "/humans/:id", HumanController, :show
+    # helo
   end
 
   pipeline :browser do
